@@ -11,7 +11,11 @@
 //     socket.send('hello')
 // }
 
+// var os = require('os');
 
+// var networkInterfaces = os.networkInterfaces();
+
+// console.log(networkInterfaces);
 
 const socket = io('ws://127.0.0.1:8080');
 socket.on('message', text => {
